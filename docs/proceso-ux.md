@@ -75,7 +75,7 @@ Inicio (index.html)
 │    └── caso-estudio.html  → MecanicosApp (problema · proceso · solución · resultado)
 ├── #experiencia  Timeline
 ├── #sobre-mi     Sobre mí + 3 principios
-├── #contacto     CTA + mail + redes + formulario → gracias.html
+├── #contacto     CTA + mail + redes + formulario (demostrativo)
 └── Footer
 404.html
 ```

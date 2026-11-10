@@ -613,7 +613,12 @@ textarea.input { min-height: 120px; resize: vertical; }
 .input:focus-visible { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--glow); }
 .input:user-invalid { border-color: var(--error); }
 .form__hint { font-size: var(--fs-xs); color: var(--text-muted); }
-.hidden-field { display: none; }
+.input[aria-invalid="true"] { border-color: var(--error); }
+.form__status:empty { display: none; }
+.form__status { padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); font-size: var(--fs-sm); border: 1px solid var(--border-strong); background: var(--bg-elev); }
+.form__status.is-ok { border-color: var(--success); }
+.form__status.is-error { border-color: var(--error); }
+.form__status a { color: var(--primary); }
 
 /* ---------- 13. Footer ---------- */
 .site-footer { border-top: 1px solid var(--border); padding-block: var(--space-7) var(--space-6); font-size: var(--fs-sm); color: var(--text-muted); }

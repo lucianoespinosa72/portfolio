@@ -8,18 +8,18 @@
   <meta name="theme-color" content="#0a0b14" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#f4f5fb" media="(prefers-color-scheme: light)">
   <meta name="author" content="Luciano Espinosa">
-  <link rel="canonical" href="https://SITIO.netlify.app/">
+  <link rel="canonical" href="https://portfolio-ten-alpha-t6jgrlmz9h.vercel.app/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_AR">
   <meta property="og:title" content="Luciano Espinosa — Desarrollador Front-end y Diseñador UX/UI">
   <meta property="og:description" content="Diseño y desarrollo productos web para negocios reales, del Figma al deploy. Mirá mis proyectos.">
-  <meta property="og:image" content="https://SITIO.netlify.app/img/og-image.png">
+  <meta property="og:image" content="https://portfolio-ten-alpha-t6jgrlmz9h.vercel.app/img/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Portfolio de Luciano Espinosa, diseñador UX/UI">
-  <meta property="og:url" content="https://SITIO.netlify.app/">
+  <meta property="og:url" content="https://portfolio-ten-alpha-t6jgrlmz9h.vercel.app/">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
@@ -369,9 +369,7 @@
             </ul>
           </div>
 
-          <form class="form" name="contacto" method="POST" action="/gracias.html" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contacto">
-            <p class="hidden-field"><label>No completar: <input name="bot-field"></label></p>
+          <form class="form" name="contacto" action="#contacto" data-demo-form novalidate>
             <div class="field">
               <label for="nombre">Nombre</label>
               <input class="input" id="nombre" name="nombre" type="text" autocomplete="name" required placeholder="Tu nombre">
@@ -386,6 +384,7 @@
             </div>
             <button class="btn btn--primary" type="submit">Enviar mensaje</button>
             <p class="form__hint">Todos los campos son obligatorios.</p>
+            <p class="form__status" role="status" aria-live="polite" data-form-status></p>
           </form>
         </div>
       </div>

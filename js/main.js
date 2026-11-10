@@ -100,7 +100,30 @@
     items.forEach(function (el) { io.observe(el); });
   }
 
-  /* ---------- 5. Año ---------- */
+  /* ---------- 5. Formulario demostrativo (sin envío real) ---------- */
+  var form = document.querySelector("[data-demo-form]");
+  if (form) {
+    var status = form.querySelector("[data-form-status]");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var invalid = form.querySelector(":invalid");
+      if (invalid) {
+        status.className = "form__status is-error";
+        status.textContent = "Revisá los campos marcados: todos son obligatorios y el email tiene que ser válido.";
+        form.querySelectorAll(".input").forEach(function (el) {
+          el.setAttribute("aria-invalid", String(!el.checkValidity()));
+        });
+        invalid.focus();
+        return;
+      }
+      form.querySelectorAll(".input").forEach(function (el) { el.removeAttribute("aria-invalid"); });
+      status.className = "form__status is-ok";
+      status.innerHTML = "¡Gracias! Este formulario es demostrativo y todavía no envía mensajes. Escribime a " +
+        '<a href="mailto:lucianoespinosa72@gmail.com">lucianoespinosa72@gmail.com</a>.';
+    });
+  }
+
+  /* ---------- 6. Año ---------- */
   document.querySelectorAll("[data-year]").forEach(function (el) {
     el.textContent = new Date().getFullYear();
   });

@@ -4,8 +4,8 @@ Portfolio web personal · Trabajo Final de **Diseño UX-UI 2026** · Lic. en Sis
 
 | | |
 |---|---|
-| 🌐 **Sitio** | https://SITIO.netlify.app |
-| 🎨 **Figma** | https://www.figma.com/design/XXXX (research, wireframes, design system y prototipo) |
+| 🌐 **Sitio** | https://portfolio-ten-alpha-t6jgrlmz9h.vercel.app |
+| 🎨 **Figma** | https://www.figma.com/design/NRhbnngRJnUtDwOPnnUfhw (research, wireframes, design system y prototipo) |
 | 📦 **Repo** | https://github.com/lucianoespinosa72/portfolio |
 
 ![Captura desktop](docs/capturas/desktop.png)
@@ -15,7 +15,7 @@ Portfolio web personal · Trabajo Final de **Diseño UX-UI 2026** · Lic. en Sis
 - **HTML5 semántico** (`header`, `nav`, `main`, `section`, `article`, `footer`)
 - **CSS3 puro** con variables en `:root` (design system "Neon Grid"), Flexbox y CSS Grid, mobile-first
 - **JavaScript vanilla** (menú mobile, toggle claro/oscuro, link activo, animación de aparición)
-- **Netlify**: deploy continuo desde `main`, Netlify Forms para el formulario y headers de seguridad
+- **Vercel**: deploy continuo desde `main` y headers de seguridad (`vercel.json`)
 - Sin frameworks JS ni constructores visuales.
 
 ## Estructura
@@ -24,12 +24,12 @@ Portfolio web personal · Trabajo Final de **Diseño UX-UI 2026** · Lic. en Sis
 ├── index.html          # One-page: hero, métricas, skills, proyectos, experiencia, sobre mí, contacto
 ├── caso-estudio.html   # Caso de estudio completo de mecanicos app (problema → proceso → solución → resultado)
 ├── 404.html            # Página 404 personalizada
-├── gracias.html        # Confirmación del formulario
 ├── css/styles.css      # Design system + estilos
 ├── js/main.js          # Interacciones
 ├── img/                # Foto (WebP), mockups SVG, favicon, imagen Open Graph
 ├── docs/proceso-ux.md  # Proceso UX: usuario, benchmark, concepto, arquitectura, test
-└── netlify.toml        # Config de deploy, 404 y headers
+├── docs/figma/         # Boards de research y wireframes importados al Figma
+└── vercel.json         # Headers de seguridad y cache
 ```
 
 ## Design system
@@ -60,14 +60,14 @@ Portfolio web personal · Trabajo Final de **Diseño UX-UI 2026** · Lic. en Sis
 
 ![Reporte Lighthouse](docs/capturas/lighthouse-mobile.png)
 
-## Deploy (Netlify)
+## Deploy (Vercel)
 
 1. Subir el repo a GitHub (`main`).
-2. En [app.netlify.com](https://app.netlify.com) → **Add new site → Import an existing project → GitHub** → elegir el repo.
-3. Build command: *(vacío)* · Publish directory: `.` (ya definido en `netlify.toml`).
-4. **Deploy**. Cada `git push` a `main` vuelve a desplegar automáticamente (CI/CD).
-5. En **Site configuration → Forms** habilitar la detección de formularios para recibir los mensajes de contacto.
-6. Copiar la URL final acá arriba y en la descripción del repo en GitHub.
+2. En [vercel.com](https://vercel.com) → **Add New → Project → Import** el repo `lucianoespinosa72/portfolio`.
+3. Framework Preset: **Other** · Build command: *(vacío)* · Output directory: `.` (sitio estático).
+4. **Deploy**. Cada `git push` a `main` vuelve a desplegar automáticamente (CI/CD); cada pull request genera una preview.
+5. `404.html` se sirve automáticamente para rutas inexistentes; los headers de seguridad están en `vercel.json`.
+6. URL final: https://portfolio-ten-alpha-t6jgrlmz9h.vercel.app (también en la descripción del repo en GitHub).
 
 ## Créditos y recursos
 
