@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Caso de estudio: TurnoYa, turnos médicos para adultos mayores — Luciano Espinosa</title>
-  <meta name="description" content="Caso de estudio UX/UI: cómo rediseñé la reserva de turnos médicos de un centro de salud, de 9 a 4 pasos, validado con usuarios reales.">
+  <title>Caso de estudio: MecanicosApp, gestión para talleres mecánicos — Luciano Espinosa</title>
+  <meta name="description" content="Caso de estudio UX/UI de MecanicosApp, el SaaS que diseño y desarrollo para que los talleres mecánicos gestionen órdenes, clientes y vehículos.">
   <meta name="theme-color" content="#0a0b14" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#f4f5fb" media="(prefers-color-scheme: light)">
   <link rel="canonical" href="https://SITIO.netlify.app/caso-estudio.html">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="es_AR">
-  <meta property="og:title" content="Caso de estudio: TurnoYa — Luciano Espinosa">
-  <meta property="og:description" content="Rediseño del flujo de reserva de turnos: problema, proceso, solución y resultados.">
+  <meta property="og:title" content="Caso de estudio: MecanicosApp — Luciano Espinosa">
+  <meta property="og:description" content="Un SaaS para talleres mecánicos: problema, proceso, solución y resultado.">
   <meta property="og:image" content="https://SITIO.netlify.app/img/og-image.png">
   <meta property="og:url" content="https://SITIO.netlify.app/caso-estudio.html">
   <meta name="twitter:card" content="summary_large_image">
@@ -42,7 +42,7 @@
         <span>espinosa<span aria-hidden="true">.dev</span></span>
       </a>
       <div class="header-actions">
-        <a class="btn btn--ghost btn--sm" href="index.html#proyectos">Todos los proyectos</a>
+        <a class="btn btn--ghost btn--sm" href="index.html#proyectos">Proyectos</a>
         <button class="icon-btn theme-toggle" type="button" aria-label="Cambiar a modo claro" data-theme-toggle>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
         </button>
@@ -59,29 +59,29 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
             Volver a proyectos
           </a>
-          <h1>TurnoYa: reservar un turno médico en 4 pasos</h1>
-          <p class="hero__lead">Rediseño del flujo de turnos de un centro de salud local, pensado para que adultos mayores puedan reservar sin ayuda.</p>
+          <h1>MecanicosApp: el taller, ordenado en una sola pantalla</h1>
+          <p class="hero__lead">Mi SaaS propio para talleres mecánicos: clientes, vehículos y órdenes de trabajo en un solo lugar, pensado para usarse desde el celular en medio del taller.</p>
           <dl class="case-facts">
-            <div><dt>Rol</dt><dd>UX research + UI</dd></div>
-            <div><dt>Duración</dt><dd>6 semanas</dd></div>
-            <div><dt>Herramientas</dt><dd>Figma, FigJam, Maze</dd></div>
-            <div><dt>Año</dt><dd>2026</dd></div>
+            <div><dt>Rol</dt><dd>Fundador · UX/UI + desarrollo</dd></div>
+            <div><dt>Tipo</dt><dd>SaaS B2B</dd></div>
+            <div><dt>Herramientas</dt><dd>Figma, HTML, CSS, JS, Git</dd></div>
+            <div><dt>Período</dt><dd>2025 — hoy</dd></div>
           </dl>
         </div>
       </header>
 
       <div class="container">
         <figure class="case-cover">
-          <img src="img/proyecto-turnos.svg" width="640" height="400" alt="Pantallas de TurnoYa: elección de especialidad, calendario con horarios libres y confirmación del turno">
+          <img src="img/proyecto-mecanicos.svg" width="640" height="400" alt="Panel de escritorio de MecanicosApp con indicadores del día y la lista de órdenes de trabajo con su estado">
         </figure>
 
         <section class="case-section" aria-labelledby="problema">
           <div class="case-section__grid">
             <p class="eyebrow">01 · Problema</p>
             <div>
-              <h2 id="problema">Reservar un turno era más difícil que ir en persona</h2>
-              <p>El sistema online del centro tenía 9 pasos, textos chicos y obligaba a crear una cuenta. El 70% de los turnos se seguía pidiendo por teléfono, saturando la recepción.</p>
-              <p>Usuario objetivo: personas de 60+ años, con celular Android y poca confianza en trámites digitales.</p>
+              <h2 id="problema">Los talleres se organizan con papel y WhatsApp</h2>
+              <p>En muchos talleres chicos, las órdenes se anotan en un cuaderno, los presupuestos se mandan por WhatsApp y el estado de cada auto “lo sabe el mecánico”. Cuando un cliente llama para preguntar, hay que salir a buscar la respuesta.</p>
+              <p>El desafío: que el dueño del taller sepa en segundos qué autos tiene, en qué estado está cada uno y cuánto se cobra, sin que cargar datos le quite tiempo de trabajo.</p>
             </div>
           </div>
         </section>
@@ -90,16 +90,16 @@
           <div class="case-section__grid">
             <p class="eyebrow">02 · Proceso</p>
             <div>
-              <h2 id="proceso">Del research al prototipo</h2>
+              <h2 id="proceso">Del taller al prototipo</h2>
               <ol class="case-steps" role="list">
-                <li class="card case-step"><h3>Entrevistas</h3><p>5 entrevistas con pacientes y 2 con recepcionistas.</p></li>
-                <li class="card case-step"><h3>Mapa de dolor</h3><p>Detecté 3 abandonos clave: registro, calendario y confirmación.</p></li>
-                <li class="card case-step"><h3>Wireframes</h3><p>Exploré 3 flujos alternativos en baja fidelidad.</p></li>
-                <li class="card case-step"><h3>Prototipo y test</h3><p>Test moderado con 5 personas sobre el prototipo en Figma.</p></li>
+                <li class="card case-step"><h3>Observar el taller</h3><p>Hablé con mecánicos de la zona sobre cómo reciben un auto, presupuestan y avisan al cliente.</p></li>
+                <li class="card case-step"><h3>Mapa del recorrido</h3><p>Ingreso → diagnóstico → presupuesto → reparación → aviso → retiro.</p></li>
+                <li class="card case-step"><h3>Priorizar</h3><p>Dejé para después todo lo que no ayuda a responder “¿cómo va mi auto?”.</p></li>
+                <li class="card case-step"><h3>Prototipo y feedback</h3><p>Prototipo en Figma probado con mecánicos antes de programar cada módulo.</p></li>
               </ol>
               <blockquote class="case-quote">
-                <p>“Yo quiero elegir el día, no llenar un formulario.”</p>
-                <footer>— Paciente, 67 años</footer>
+                <p>“No tengo tiempo de llenar formularios, tengo las manos llenas de grasa.”</p>
+                <footer>— Dueño de taller, durante una entrevista</footer>
               </blockquote>
             </div>
           </div>
@@ -109,13 +109,17 @@
           <div class="case-section__grid">
             <p class="eyebrow">03 · Solución</p>
             <div>
-              <h2 id="solucion">Menos pasos, más claridad</h2>
+              <h2 id="solucion">Decisiones de diseño</h2>
               <ul>
-                <li>Reserva como invitado con DNI: se eliminó la creación de cuenta.</li>
-                <li>Calendario que muestra solo días con horarios libres.</li>
-                <li>Texto base de 18 px, botones de 56 px y contraste AAA en acciones principales.</li>
-                <li>Confirmación por WhatsApp con opción de cancelar en un toque.</li>
+                <li><strong>Mobile primero:</strong> el mecánico usa el celular en el taller; la computadora queda para el resumen del día.</li>
+                <li><strong>Estados con color y texto:</strong> cada orden muestra si está esperando, en curso o lista, sin depender solo del color.</li>
+                <li><strong>Cargar lo mínimo:</strong> una orden nueva se crea con la patente; los datos del vehículo y del cliente se completan solos si ya existen.</li>
+                <li><strong>Acciones grandes:</strong> botones de ancho completo para usar con una mano y sin precisión.</li>
+                <li><strong>Avisar en un toque:</strong> cuando la orden pasa a “lista”, el sistema propone avisarle al cliente.</li>
               </ul>
+              <figure class="case-cover" style="margin-top: var(--space-6);">
+                <img src="img/mecanicos-orden-mobile.svg" width="1200" height="750" loading="lazy" alt="Dos pantallas mobile: la lista de órdenes del día con su estado y el detalle de una orden con su línea de tiempo, el total y el botón Avisar al cliente">
+              </figure>
             </div>
           </div>
         </section>
@@ -124,22 +128,23 @@
           <div class="case-section__grid">
             <p class="eyebrow">04 · Resultado</p>
             <div>
-              <h2 id="resultado">Resultados y aprendizajes</h2>
+              <h2 id="resultado">Dónde está hoy y qué aprendí</h2>
               <ul class="metrics__grid" role="list" style="margin-top: var(--space-5);">
-                <li class="card metric"><span class="metric__value">4</span><span class="metric__label">pasos (antes 9)</span></li>
-                <li class="card metric"><span class="metric__value">-52%</span><span class="metric__label">tiempo de reserva</span></li>
-                <li class="card metric"><span class="metric__value">5/5</span><span class="metric__label">completaron la tarea</span></li>
-                <li class="card metric"><span class="metric__value">SUS 84</span><span class="metric__label">usabilidad percibida</span></li>
+                <li class="card metric"><span class="metric__value">1</span><span class="metric__label">dato para abrir una orden: la patente</span></li>
+                <li class="card metric"><span class="metric__value">3</span><span class="metric__label">estados claros por orden</span></li>
+                <li class="card metric"><span class="metric__value">6</span><span class="metric__label">etapas del recorrido mapeadas</span></li>
+                <li class="card metric"><span class="metric__value">100%</span><span class="metric__label">usable desde el celular</span></li>
               </ul>
               <h3>Qué aprendí</h3>
-              <p>Testear con el usuario real cambió todo: mi primera versión tenía un calendario mensual que nadie entendía. Cambiarlo por una lista de “próximos días libres” fue la decisión que más mejoró el resultado.</p>
+              <p>Diseñar un producto propio me obligó a decir que no: cada función nueva tiene que justificar el tiempo que le saca al mecánico.</p>
+              <p>También aprendí que el usuario real manda: lo que en el escritorio parecía obvio, en el taller, con poca luz y las manos ocupadas, no funcionaba.</p>
             </div>
           </div>
         </section>
 
         <nav class="case-nav" aria-label="Navegación entre proyectos">
           <a class="btn btn--ghost" href="index.html#proyectos">← Todos los proyectos</a>
-          <a class="btn btn--primary" href="index.html#contacto">Trabajemos juntos</a>
+          <a class="btn btn--primary" href="index.html#contacto">Pedir una demo</a>
         </nav>
       </div>
     </article>

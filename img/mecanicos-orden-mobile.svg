@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#211a52"/><stop offset="1" stop-color="#0f1130"/></linearGradient></defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <g stroke="#2b3070"><path d="M0 125h1200M0 250h1200M0 375h1200M0 500h1200M0 625h1200M150 0v750M300 0v750M450 0v750M600 0v750M750 0v750M900 0v750M1050 0v750"/></g>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <!-- teléfono 1: lista de órdenes -->
+    <g transform="translate(250 60)">
+      <rect width="320" height="630" rx="40" fill="#0a0b14" stroke="#3a3f88" stroke-width="3"/>
+      <rect x="18" y="22" width="284" height="586" rx="28" fill="#14173a"/>
+      <text x="44" y="80" fill="#eceeff" font-size="24" font-weight="700">Órdenes de hoy</text>
+      <text x="44" y="108" fill="#a8adcf" font-size="15">5 en taller · 2 listas</text>
+      <g font-size="16">
+        <rect x="40" y="134" width="240" height="96" rx="16" fill="#1c2050" stroke="#3a3f88"/>
+        <text x="60" y="170" fill="#eceeff" font-weight="700">Gol Trend · AB123CD</text><text x="60" y="198" fill="#a8adcf">Cambio de embrague</text>
+        <rect x="190" y="182" width="74" height="28" rx="14" fill="#ffc83d"/><text x="200" y="202" fill="#0a0b14" font-size="13" font-weight="700">En curso</text>
+        <rect x="40" y="244" width="240" height="96" rx="16" fill="#1c2050" stroke="#3a3f88"/>
+        <text x="60" y="280" fill="#eceeff" font-weight="700">Corolla · AC456EF</text><text x="60" y="308" fill="#a8adcf">Service 20.000 km</text>
+        <rect x="200" y="292" width="64" height="28" rx="14" fill="#3dffb0"/><text x="212" y="312" fill="#0a0b14" font-size="13" font-weight="700">Lista</text>
+        <rect x="40" y="354" width="240" height="96" rx="16" fill="#1c2050" stroke="#3a3f88"/>
+        <text x="60" y="390" fill="#eceeff" font-weight="700">Hilux · AD789GH</text><text x="60" y="418" fill="#a8adcf">Diagnóstico ruido</text>
+        <rect x="184" y="402" width="80" height="28" rx="14" fill="#9d90ff"/><text x="194" y="422" fill="#0a0b14" font-size="13" font-weight="700">Esperando</text>
+      </g>
+      <rect x="40" y="520" width="240" height="60" rx="16" fill="#c6ff3d"/>
+      <text x="160" y="558" fill="#0a0b14" font-size="20" font-weight="700" text-anchor="middle">+ Nueva orden</text>
+    </g>
+    <!-- teléfono 2: detalle -->
+    <g transform="translate(630 60)">
+      <rect width="320" height="630" rx="40" fill="#0a0b14" stroke="#3a3f88" stroke-width="3"/>
+      <rect x="18" y="22" width="284" height="586" rx="28" fill="#14173a"/>
+      <text x="44" y="80" fill="#a8adcf" font-size="15">Orden #0142</text>
+      <text x="44" y="110" fill="#eceeff" font-size="24" font-weight="700">Gol Trend</text>
+      <text x="44" y="136" fill="#a8adcf" font-size="15">Cliente: Juan Pérez</text>
+      <g font-size="15">
+        <circle cx="56" cy="186" r="12" fill="#3dffb0"/><text x="80" y="191" fill="#eceeff">Recibido</text>
+        <rect x="54" y="198" width="4" height="40" fill="#3a3f88"/>
+        <circle cx="56" cy="250" r="12" fill="#ffc83d"/><text x="80" y="255" fill="#eceeff" font-weight="700">En reparación</text>
+        <rect x="54" y="262" width="4" height="40" fill="#3a3f88"/>
+        <circle cx="56" cy="314" r="12" fill="none" stroke="#3a3f88" stroke-width="3"/><text x="80" y="319" fill="#a8adcf">Listo para retirar</text>
+      </g>
+      <rect x="40" y="350" width="240" height="110" rx="16" fill="#1c2050" stroke="#3a3f88"/>
+      <text x="60" y="384" fill="#a8adcf" font-size="14">Repuestos + mano de obra</text>
+      <text x="60" y="426" fill="#c6ff3d" font-size="30" font-weight="700" font-family="Consolas, monospace">$185.000</text>
+      <rect x="40" y="480" width="240" height="56" rx="16" fill="#c6ff3d"/>
+      <text x="160" y="515" fill="#0a0b14" font-size="18" font-weight="700" text-anchor="middle">Avisar al cliente</text>
+      <rect x="40" y="548" width="240" height="44" rx="14" fill="none" stroke="#3a3f88" stroke-width="2"/>
+      <text x="160" y="576" fill="#eceeff" font-size="16" text-anchor="middle">Agregar nota</text>
+    </g>
+  </g>
+</svg>
