@@ -86,7 +86,7 @@ Inicio (index.html)
 
 ✏️ Hacelo con 3–5 personas en FigJam (o en papel): dales tarjetas con estos contenidos y pediles que las agrupen y nombren los grupos.
 
-Tarjetas: *Figma · HTML/CSS · Python · MecanicosApp · Don Joaquín Hnos. · Puerto Pádel · Vaxler · Licenciatura · Principios de trabajo · Foto · Email · LinkedIn · Disponibilidad · Ubicación*
+Tarjetas: *Figma · HTML/CSS · Python · MecanicosApp · Qué Delicia! Pastelería · Puerto Pádel · Vaxler · Licenciatura · Principios de trabajo · Foto · Email · LinkedIn · Disponibilidad · Ubicación*
 
 Registrá: grupos que formaron, nombres que les pusieron y qué cambiaste (ej.: "Disponibilidad y ubicación se agruparon con la presentación → van al hero").
 
