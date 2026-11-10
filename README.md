@@ -22,12 +22,12 @@ Portfolio web personal · Trabajo Final de **Diseño UX-UI 2026** · Lic. en Sis
 
 ```
 ├── index.html          # One-page: hero, métricas, skills, proyectos, experiencia, sobre mí, contacto
-├── caso-estudio.html   # Caso de estudio completo de TurnoYa (problema → proceso → solución → resultado)
+├── caso-estudio.html   # Caso de estudio completo de MecanicosApp (problema → proceso → solución → resultado)
 ├── 404.html            # Página 404 personalizada
 ├── gracias.html        # Confirmación del formulario
 ├── css/styles.css      # Design system + estilos
 ├── js/main.js          # Interacciones
-├── img/                # Mockups SVG, retrato, favicon, imagen Open Graph
+├── img/                # Foto (WebP), mockups SVG, favicon, imagen Open Graph
 ├── docs/proceso-ux.md  # Proceso UX: usuario, benchmark, concepto, arquitectura, test
 └── netlify.toml        # Config de deploy, 404 y headers
 ```
@@ -54,7 +54,7 @@ Portfolio web personal · Trabajo Final de **Diseño UX-UI 2026** · Lic. en Sis
 - Navegable con teclado, `:focus-visible` en todos los interactivos, link "Saltar al contenido".
 - Menú mobile con `aria-expanded` / `aria-controls`, cierre con `Esc`.
 - Respeta `prefers-reduced-motion`.
-- Imágenes vectoriales livianas con `width`/`height` y `loading="lazy"` debajo del pliegue.
+- Imágenes en WebP y SVG con `width`/`height` y `loading="lazy"` debajo del pliegue.
 
 **Lighthouse (mobile):**
 
