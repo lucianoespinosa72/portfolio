@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Moodboard</title>
+<style>
+  body { margin: 0; background: #05060d; font-family: "Space Grotesk", "Segoe UI", Arial, sans-serif; color: #eceeff; }
+  .board { width: 1760px; padding: 64px; display: grid; grid-template-columns: repeat(6, 1fr); grid-auto-rows: 180px; gap: 20px; }
+  .t { grid-column: 1 / -1; grid-row: span 1; display: flex; flex-direction: column; justify-content: center; }
+  .t h1 { margin: 0; font-size: 61px; letter-spacing: -0.02em; }
+  .t p { margin: 8px 0 0; color: #a8adcf; font-size: 20px; }
+  .tile { border-radius: 16px; overflow: hidden; position: relative; border: 1px solid #2a2e5c; }
+  .lab { position: absolute; left: 16px; bottom: 14px; font: 12px "JetBrains Mono", Consolas, monospace; letter-spacing: .14em; text-transform: uppercase; color: #eceeff; background: rgba(10,11,20,.7); padding: 4px 8px; border-radius: 4px; }
+  .w2 { grid-column: span 2; } .w3 { grid-column: span 3; } .h2 { grid-row: span 2; }
+  .grid { background: #0a0b14; background-image: linear-gradient(#1f2350 1px, transparent 1px), linear-gradient(90deg, #1f2350 1px, transparent 1px); background-size: 32px 32px; }
+  .hud { background: radial-gradient(circle at 50% 50%, #14173a 0 30%, #0a0b14 31%); display: grid; place-items: center; }
+  .ring { width: 260px; height: 260px; border-radius: 50%; border: 2px dashed #454a85; display: grid; place-items: center; position: relative; }
+  .ring::before { content: ""; position: absolute; inset: 30px; border-radius: 50%; border: 6px solid transparent; border-top-color: #c6ff3d; border-right-color: #c6ff3d; box-shadow: 0 0 30px rgba(198,255,61,.35); }
+  .ring span { font: 700 40px "JetBrains Mono", monospace; color: #c6ff3d; }
+  .neon { background: linear-gradient(135deg, #1a0f4d, #0a0b14 60%); display: grid; place-items: center; }
+  .neon b { font-size: 72px; color: #c6ff3d; text-shadow: 0 0 12px #c6ff3d, 0 0 40px rgba(198,255,61,.6); letter-spacing: -0.02em; }
+  .glow { background: radial-gradient(circle at 30% 40%, rgba(157,144,255,.8), transparent 45%), radial-gradient(circle at 75% 70%, rgba(198,255,61,.55), transparent 40%), #0a0b14; }
+  .type { background: #14173a; padding: 28px; }
+  .type .a { font-size: 88px; font-weight: 700; line-height: 1; } .type .b { font: 20px "JetBrains Mono", monospace; color: #9d90ff; margin-top: 16px; }
+  .term { background: #0a0b14; padding: 24px; font: 15px/1.7 "JetBrains Mono", Consolas, monospace; color: #a8adcf; }
+  .term i { color: #c6ff3d; font-style: normal; } .term u { color: #9d90ff; text-decoration: none; }
+  .pal { display: grid; grid-template-columns: repeat(6, 1fr); }
+  .pal div { display: flex; align-items: flex-end; padding: 12px; font: 11px "JetBrains Mono", monospace; }
+  .ui { background: #0a0b14; padding: 24px; display: grid; gap: 14px; align-content: center; }
+  .btn { display: inline-flex; padding: 12px 22px; border-radius: 8px; font-weight: 600; width: fit-content; }
+  .p { background: #c6ff3d; color: #0a0b14; box-shadow: 0 0 0 4px rgba(198,255,61,.3); } .g { border: 1px solid #454a85; }
+  .chip { display: inline-block; padding: 4px 12px; border-radius: 999px; background: rgba(157,144,255,.14); border: 1px solid #2a2e5c; font: 12px "JetBrains Mono", monospace; margin-right: 6px; }
+  .photo img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+  .kw { display: grid; place-items: center; text-align: center; padding: 20px; }
+  .kw b { font-size: 34px; display: block; } .kw p { margin: 8px 0 0; color: #a8adcf; font-size: 14px; }
+  .k1 { background: linear-gradient(160deg, #1c2050, #0a0b14); } .k1 b { color: #c6ff3d; }
+  .k2 { background: #eceeff; color: #0f1124; } .k2 b { color: #0f1124; } .k2 p { color: #474c6b; }
+  .k3 { background: linear-gradient(160deg, #9d90ff, #4535d6); } .k3 p { color: #eceeff; }
+  .scan { background: repeating-linear-gradient(0deg, #0a0b14 0 3px, #121533 3px 4px); display: grid; place-items: center; }
+  .scan span:not(.lab) { font: 700 26px "JetBrains Mono", monospace; color: #9d90ff; letter-spacing: .3em; }
+</style>
+</head>
+<body>
+<div class="board">
+  <div class="t"><h1>Moodboard · Futurista · Preciso · Cercano</h1><p>Interfaces HUD, neón sobre fondo azul noche, grillas técnicas y un toque humano con foto real y violeta cálido.</p></div>
+
+  <div class="tile hud w2 h2"><div class="ring"><span>92</span></div><span class="lab">HUD · anillos y datos</span></div>
+  <div class="tile neon w2"><b>neon_</b><span class="lab">Acento lima neón</span></div>
+  <div class="tile grid w2"><span class="lab">Grilla técnica 32 px</span></div>
+  <div class="tile glow w2"><span class="lab">Luz violeta + lima</span></div>
+  <div class="tile type w2"><div class="a">Aa</div><div class="b">Space Grotesk / JetBrains Mono</div><span class="lab" style="bottom:auto;top:14px;right:16px;left:auto">Tipografía</span></div>
+
+  <div class="tile term w2 h2"><i>$</i> deploy --prod<br><u>✓</u> build ok · 0 errores<br><u>✓</u> lighthouse 92 · 100 · 100 · 100<br><u>✓</u> wcag 2.2 aa<br><i>$</i> status<br>disponible para pasantías<span style="color:#c6ff3d">▌</span><span class="lab">Estética terminal</span></div>
+  <div class="tile photo w2 h2"><img src="../../img/luciano-720.webp" alt=""><span class="lab">Cercano · foto real</span></div>
+  <div class="tile ui w2"><span class="btn p">Ver trabajos</span><span class="btn g">Contactame</span><span class="lab">Botones con glow</span></div>
+  <div class="tile ui w2"><div><span class="chip">Next.js</span><span class="chip">Figma</span><span class="chip">UX/UI</span></div><span class="lab">Chips técnicos</span></div>
+
+  <div class="tile pal w3"><div style="background:#0a0b14">#0a0b14</div><div style="background:#14173a">#14173a</div><div style="background:#c6ff3d;color:#0a0b14">#c6ff3d</div><div style="background:#9d90ff;color:#0a0b14">#9d90ff</div><div style="background:#eceeff;color:#0a0b14">#eceeff</div><div style="background:#4535d6">#4535d6</div><span class="lab" style="bottom:auto;top:14px">Paleta</span></div>
+  <div class="tile scan w3"><span>RESEARCH → UI → CODE</span><span class="lab" style="bottom:auto;top:14px">Scanlines · proceso</span></div>
+
+  <div class="tile kw k1 w2"><div><b>Futurista</b><p>Neón, HUD, grillas y glow → color primario lima y anillos decorativos.</p></div></div>
+  <div class="tile kw k2 w2"><div><b>Preciso</b><p>Escala 1.25, múltiplos de 4, numeración 01–05 → sistema estricto.</p></div></div>
+  <div class="tile kw k3 w2"><div><b>Cercano</b><p>Foto real, violeta cálido, voseo y modo claro → marca personal humana.</p></div></div>
+</div>
+</body>
+</html>
