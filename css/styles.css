@@ -515,7 +515,7 @@ section[id], [id].anchor { scroll-margin-top: calc(var(--header-h) + var(--space
 .project-card__link:active { opacity: 0.8; }
 
 /* ---------- 10. Timeline ---------- */
-.timeline { position: relative; display: grid; gap: var(--space-6); padding-left: var(--space-6); }
+ol.timeline { position: relative; display: grid; gap: var(--space-6); padding-left: var(--space-6); max-width: 48rem; }
 .timeline::before {
   content: "";
   position: absolute;
@@ -687,8 +687,6 @@ textarea.input { min-height: 120px; resize: vertical; }
   .case-facts { grid-template-columns: repeat(4, 1fr); }
   .case-section__grid { grid-template-columns: 220px 1fr; gap: var(--space-7); }
   .case-steps { grid-template-columns: repeat(2, 1fr); }
-
-  .timeline { grid-template-columns: 1fr; }
 }
 
 /* ==========================================================================
@@ -740,8 +738,6 @@ textarea.input { min-height: 120px; resize: vertical; }
   .about__portrait { max-width: none; }
 
   .contact__box { grid-template-columns: 1fr 1fr; align-items: start; padding: var(--space-8); }
-
-  .timeline { grid-template-columns: repeat(2, 1fr); column-gap: var(--space-8); }
 }
 
 /* ---------- Accesibilidad: reducir movimiento ---------- */
