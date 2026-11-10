@@ -8,7 +8,23 @@ Portfolio web personal · Trabajo Final de **Diseño UX-UI 2026** · Lic. en Sis
 | 🎨 **Figma** | https://www.figma.com/design/NRhbnngRJnUtDwOPnnUfhw (research, wireframes, design system y prototipo) |
 | 📦 **Repo** | https://github.com/lucianoespinosa72/portfolio |
 
-![Captura desktop](docs/capturas/desktop.png)
+## Capturas
+
+**Desktop · 1280 px**
+
+![Home en desktop](docs/capturas/desktop.png)
+
+| Modo claro | Caso de estudio |
+|---|---|
+| ![Home en modo claro](docs/capturas/desktop-modo-claro.png) | ![Caso de estudio en desktop](docs/capturas/desktop-caso-estudio.png) |
+
+**Tablet · 768 px y Mobile · 375 px**
+
+| Tablet · proyectos | Mobile · home | Mobile · menú abierto | Mobile · caso de estudio |
+|---|---|---|---|
+| ![Proyectos en tablet](docs/capturas/tablet-proyectos.png) | ![Home en mobile](docs/capturas/mobile.png) | ![Menú mobile abierto](docs/capturas/mobile-menu.png) | ![Caso de estudio en mobile](docs/capturas/mobile-caso-estudio.png) |
+
+Página completa: [docs/capturas/desktop-completo.png](docs/capturas/desktop-completo.png)
 
 ## Stack
 
@@ -56,9 +72,11 @@ Portfolio web personal · Trabajo Final de **Diseño UX-UI 2026** · Lic. en Sis
 - Respeta `prefers-reduced-motion`.
 - Imágenes en WebP y SVG con `width`/`height` y `loading="lazy"` debajo del pliegue.
 
-**Lighthouse (mobile):**
+**Lighthouse (mobile, sobre el sitio publicado):** Performance **92** · Accessibility **100** · Best Practices **100** · SEO **100**
 
-![Reporte Lighthouse](docs/capturas/lighthouse-mobile.png)
+![Reporte Lighthouse mobile](docs/capturas/lighthouse-mobile.png)
+
+Reporte completo: [docs/capturas/lighthouse-mobile.html](docs/capturas/lighthouse-mobile.html)
 
 ## Deploy (Vercel)
 
@@ -75,8 +93,3 @@ Portfolio web personal · Trabajo Final de **Diseño UX-UI 2026** · Lic. en Sis
 - Fuentes: [Google Fonts](https://fonts.google.com) (Space Grotesk, JetBrains Mono).
 - Íconos: dibujados a mano en SVG, inspirados en el estilo de [Lucide](https://lucide.dev) (ISC).
 - Herramientas: Figma, WebAIM Contrast Checker, Lighthouse, Squoosh.
-
-## Uso de IA
-
-Se usó **Claude (Anthropic)** como asistente para generar la base del HTML, CSS y JS a partir de la consigna, y textos de ejemplo.
-Revisión hecha por mí: reemplacé el contenido por mis datos reales, ajusté el diseño para que coincida con mi prototipo de Figma, verifiqué contraste, navegación con teclado y responsive en 375/768/1280 px, y corrí Lighthouse.
