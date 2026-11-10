@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luciano Espinosa — Desarrollador Front-end y Diseñador UX/UI | Portfolio</title>
+  <meta name="description" content="Portfolio de Luciano Espinosa, desarrollador front-end y diseñador UX/UI de Concepción del Uruguay. Proyectos, casos de estudio, experiencia y contacto.">
+  <meta name="theme-color" content="#0a0b14" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f4f5fb" media="(prefers-color-scheme: light)">
+  <meta name="author" content="Luciano Espinosa">
+  <link rel="canonical" href="https://SITIO.netlify.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Luciano Espinosa — Desarrollador Front-end y Diseñador UX/UI">
+  <meta property="og:description" content="Diseño y desarrollo productos web para negocios reales, del Figma al deploy. Mirá mis proyectos.">
+  <meta property="og:image" content="https://SITIO.netlify.app/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Portfolio de Luciano Espinosa, diseñador UX/UI">
+  <meta property="og:url" content="https://SITIO.netlify.app/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <!-- Fuentes: 2 familias, font-display: swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Tema antes de pintar (evita parpadeo) -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (!t) t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", t);
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- 1. HEADER / NAVEGACIÓN -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="#inicio" aria-label="Luciano Espinosa, ir al inicio">
+        <span class="logo__mark" aria-hidden="true">LE</span>
+        <span>espinosa<span aria-hidden="true">.dev</span></span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <ul class="nav-list" role="list">
+          <li><a class="nav-link" href="#skills"><span class="nav-num">01</span>Skills</a></li>
+          <li><a class="nav-link" href="#proyectos"><span class="nav-num">02</span>Proyectos</a></li>
+          <li><a class="nav-link" href="#experiencia"><span class="nav-num">03</span>Experiencia</a></li>
+          <li><a class="nav-link" href="#sobre-mi"><span class="nav-num">04</span>Sobre mí</a></li>
+          <li><a class="nav-link" href="#contacto"><span class="nav-num">05</span>Contacto</a></li>
+        </ul>
+        <a class="btn btn--primary nav-cta" href="#contacto">Hablemos</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="icon-btn header-github" href="https://github.com/lucianoespinosa72" target="_blank" rel="noopener noreferrer" aria-label="GitHub (se abre en una pestaña nueva)">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.3-1.69-1.3-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.27 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+        </a>
+        <button class="icon-btn theme-toggle" type="button" aria-label="Cambiar a modo claro" data-theme-toggle>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+          <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- 2. HERO -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="grid-bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div>
+          <p class="badge"><span class="badge__dot" aria-hidden="true"></span>Disponible para pasantías y freelance</p>
+          <h1 class="hero__title" id="hero-title">
+            Luciano Espinosa
+            <span class="accent">Desarrollador Front-end &amp; UX/UI</span>
+          </h1>
+          <p class="hero__lead">Diseño y desarrollo productos web para negocios reales: entiendo el problema, lo prototipo en Figma y lo llevo a producción.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary" href="#proyectos">
+              Ver trabajos
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#contacto">Contactame</a>
+          </div>
+          <p class="hero__meta">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              Concepción del Uruguay, Entre Ríos, Argentina
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              GMT-3
+            </span>
+          </p>
+        </div>
+
+        <!-- Visual decorativo tipo HUD -->
+        <div class="hero__visual" aria-hidden="true">
+          <svg viewBox="0 0 440 440" width="440" height="440" fill="none">
+            <defs>
+              <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="var(--primary)"/>
+                <stop offset="1" stop-color="var(--secondary)"/>
+              </linearGradient>
+            </defs>
+            <circle cx="220" cy="220" r="200" stroke="var(--border-strong)" stroke-dasharray="2 8"/>
+            <circle cx="220" cy="220" r="150" stroke="var(--border)"/>
+            <circle cx="220" cy="220" r="150" stroke="url(#hg)" stroke-width="3" stroke-dasharray="320 620" stroke-linecap="round"/>
+            <circle cx="220" cy="220" r="96" stroke="var(--border-strong)"/>
+            <rect x="140" y="160" width="160" height="120" rx="12" fill="var(--surface)" stroke="var(--border-strong)"/>
+            <rect x="156" y="178" width="64" height="8" rx="4" fill="var(--primary)"/>
+            <rect x="156" y="196" width="128" height="6" rx="3" fill="var(--border-strong)"/>
+            <rect x="156" y="210" width="100" height="6" rx="3" fill="var(--border-strong)"/>
+            <rect x="156" y="238" width="56" height="24" rx="6" fill="var(--secondary)"/>
+            <rect x="220" y="238" width="56" height="24" rx="6" stroke="var(--border-strong)"/>
+            <path d="M20 220h40M380 220h40M220 20v40M220 380v40" stroke="var(--primary)" stroke-width="2"/>
+            <circle cx="361" cy="113" r="6" fill="var(--primary)"/>
+            <circle cx="88" cy="330" r="4" fill="var(--secondary)"/>
+            <text x="300" y="98" fill="var(--text-muted)" font-family="JetBrains Mono, monospace" font-size="11">research → ui</text>
+            <text x="44" y="356" fill="var(--text-muted)" font-family="JetBrains Mono, monospace" font-size="11">wcag 2.2 aa</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MÉTRICAS / HIGHLIGHTS -->
+    <section class="metrics" aria-label="Logros destacados">
+      <div class="container">
+        <ul class="metrics__grid" role="list">
+          <li class="card metric reveal"><span class="metric__value">2</span><span class="metric__label">años de Lic. en Sistemas</span></li>
+          <li class="card metric reveal"><span class="metric__value">14</span><span class="metric__label">proyectos y repos publicados</span></li>
+          <li class="card metric reveal"><span class="metric__value">12</span><span class="metric__label">tecnologías y herramientas</span></li>
+          <li class="card metric reveal"><span class="metric__value">1</span><span class="metric__label">SaaS propio en desarrollo</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. SKILLS -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">01 · Skills</p>
+          <h2 class="section__title" id="skills-title">Lo que sé hacer</h2>
+          <p class="section__lead">Combino diseño centrado en el usuario con base sólida de programación.</p>
+        </header>
+        <div class="skills__grid">
+          <article class="card skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            </div>
+            <h3>Diseño UX</h3>
+            <p>Flujos pensados para que el usuario complete su tarea sin fricción, validados con tests.</p>
+            <ul class="tags" role="list">
+              <li class="tag">User flows</li><li class="tag">Wireframes</li><li class="tag">Proto-personas</li><li class="tag">Tests de usabilidad</li><li class="tag">Benchmark</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3>Diseño UI</h3>
+            <p>Interfaces consistentes basadas en tokens y componentes, con foco en jerarquía y accesibilidad.</p>
+            <ul class="tags" role="list">
+              <li class="tag">Figma</li><li class="tag">Design tokens</li><li class="tag">Prototipado</li><li class="tag">Basecoat UI</li><li class="tag">WCAG 2.2</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 4l-4 16"/></svg>
+            </div>
+            <h3>Front-end</h3>
+            <p>Maquetado semántico, responsive y mobile-first, con JavaScript modular y sin frameworks innecesarios.</p>
+            <ul class="tags" role="list">
+              <li class="tag">HTML5</li><li class="tag">CSS3</li><li class="tag">Tailwind CSS</li><li class="tag">JavaScript</li><li class="tag">TypeScript</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4Z"/></svg>
+            </div>
+            <h3>Programación y herramientas</h3>
+            <p>Algoritmos y estructuras de datos, y el stack con el que versiono y publico.</p>
+            <ul class="tags" role="list">
+              <li class="tag">Python</li><li class="tag">Estructuras de datos</li><li class="tag">Node.js / npm</li><li class="tag">Git</li><li class="tag">GitHub</li><li class="tag">Vercel</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PROYECTOS -->
+    <section class="section" id="proyectos" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">02 · Proyectos</p>
+          <h2 class="section__title" id="projects-title">Casos de estudio</h2>
+          <p class="section__lead">Cada proyecto cuenta el problema, el proceso, la solución y qué aprendí.</p>
+        </header>
+        <div class="projects__grid">
+          <article class="card project-card reveal">
+            <div class="project-card__media">
+              <img src="img/proyecto-turnos.svg" width="640" height="400" loading="lazy" alt="Mockup de la app TurnoYa: pantalla de selección de horario en un celular">
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__meta"><span>App mobile</span><span>2026</span></p>
+              <h3>TurnoYa — turnos médicos</h3>
+              <p>Rediseño del flujo de reserva de turnos para un centro de salud local, pensado para adultos mayores.</p>
+              <p class="project-card__result"><strong>Resultado:</strong> la reserva pasó de 9 a 4 pasos y el tiempo promedio en el test bajó un 52%.</p>
+              <ul class="tags" role="list"><li class="tag">Figma</li><li class="tag">Entrevistas</li><li class="tag">Test de usabilidad</li></ul>
+              <a class="project-card__link" href="caso-estudio.html">
+                Ver caso de estudio
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-card__media">
+              <img src="img/proyecto-campus.svg" width="640" height="400" loading="lazy" alt="Mockup del panel de alumno del campus virtual en una pantalla de escritorio">
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__meta"><span>Web app</span><span>2025</span></p>
+              <h3>Campus FCyT — panel del alumno</h3>
+              <p>Propuesta de rediseño del panel de alumno para encontrar materias, fechas de examen y avisos en un solo lugar.</p>
+              <p class="project-card__result"><strong>Aprendizaje:</strong> el card sorting mostró que los alumnos agrupan por fecha, no por materia.</p>
+              <ul class="tags" role="list"><li class="tag">Card sorting</li><li class="tag">Wireframes</li><li class="tag">Design system</li></ul>
+              <a class="project-card__link" href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">
+                Ver prototipo en Figma<span class="visually-hidden"> (se abre en una pestaña nueva)</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-card__media">
+              <img src="img/proyecto-feria.svg" width="640" height="400" loading="lazy" alt="Mockup de la landing de Feria Local con catálogo de productores">
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__meta"><span>Landing + front-end</span><span>2025</span></p>
+              <h3>Feria Local — catálogo de productores</h3>
+              <p>Landing responsive para que productores de la región muestren sus productos y reciban pedidos por WhatsApp.</p>
+              <p class="project-card__result"><strong>Resultado:</strong> Lighthouse 98 en accesibilidad y maquetado 100% fiel al Figma.</p>
+              <ul class="tags" role="list"><li class="tag">HTML</li><li class="tag">CSS Grid</li><li class="tag">Netlify</li></ul>
+              <a class="project-card__link" href="https://github.com/lucianoespinosa72" target="_blank" rel="noopener noreferrer">
+                Ver repositorio<span class="visually-hidden"> (se abre en una pestaña nueva)</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. EXPERIENCIA / FORMACIÓN -->
+    <section class="section" id="experiencia" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">03 · Experiencia</p>
+          <h2 class="section__title" id="exp-title">Experiencia y formación</h2>
+        </header>
+        <ol class="timeline" role="list">
+          <li class="timeline__item reveal">
+            <p class="timeline__period">2023 — Actualidad</p>
+            <h3>Licenciatura en Sistemas de Información</h3>
+            <p class="timeline__org">FCyT · UADER, Sede Concepción del Uruguay</p>
+            <ul>
+              <li>Cursando 4.º año; promedio 8,2.</li>
+              <li>Trabajos prácticos de Diseño UX-UI presentados como casos de estudio.</li>
+            </ul>
+          </li>
+          <li class="timeline__item reveal">
+            <p class="timeline__period">2025 — 3 meses</p>
+            <h3>Diseño UX/UI freelance</h3>
+            <p class="timeline__org">Feria Local (proyecto comunitario)</p>
+            <ul>
+              <li>Diseñé y maqueté la landing con catálogo de productores.</li>
+              <li>Coordiné 2 rondas de feedback con los productores.</li>
+            </ul>
+          </li>
+          <li class="timeline__item reveal">
+            <p class="timeline__period">2025</p>
+            <h3>Curso Google UX Design</h3>
+            <p class="timeline__org">Coursera</p>
+            <ul>
+              <li>Completé 3 proyectos de portfolio con proceso completo.</li>
+              <li>Aprendí a planificar y moderar tests de usabilidad.</li>
+            </ul>
+          </li>
+          <li class="timeline__item reveal">
+            <p class="timeline__period">2024</p>
+            <h3>Voluntariado — soporte digital</h3>
+            <p class="timeline__org">Biblioteca popular</p>
+            <ul>
+              <li>Ayudé a adultos mayores a usar trámites online.</li>
+              <li>Ahí descubrí lo que cuesta una interfaz mal pensada.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 7. SOBRE MÍ -->
+    <section class="section" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <figure class="about__portrait reveal">
+          <img src="img/retrato.svg" width="360" height="450" loading="lazy" alt="Ilustración de Luciano Espinosa sonriendo, con buzo y fondo violeta">
+        </figure>
+        <div class="about__text">
+          <header class="section__head">
+            <p class="eyebrow">04 · Sobre mí</p>
+            <h2 class="section__title" id="about-title">Diseño para personas reales</h2>
+          </header>
+          <p>Soy estudiante de Sistemas de Información y me interesa el punto donde el diseño se encuentra con el código. Disfruto entender cómo piensa la gente antes de abrir Figma.</p>
+          <p>Busco mi primera experiencia profesional en un equipo de producto donde pueda diseñar, validar con usuarios y también maquetar lo que diseño.</p>
+          <ul class="principles" role="list">
+            <li class="card principle reveal">
+              <span class="principle__num">01</span>
+              <h3>Primero el problema</h3>
+              <p>No diseño pantallas: resuelvo necesidades que validé con usuarios.</p>
+            </li>
+            <li class="card principle reveal">
+              <span class="principle__num">02</span>
+              <h3>Accesible por defecto</h3>
+              <p>Contraste, teclado y lectores de pantalla desde el primer boceto.</p>
+            </li>
+            <li class="card principle reveal">
+              <span class="principle__num">03</span>
+              <h3>Del Figma al código</h3>
+              <p>Diseño lo que se puede construir y construyo lo que diseño.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CONTACTO -->
+    <section class="section" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__box reveal">
+          <div>
+            <p class="eyebrow">05 · Contacto</p>
+            <h2 class="contact__title" id="contact-title">¿Tenés un proyecto? <span>Hablemos.</span></h2>
+            <p class="section__lead">Respondo en menos de 24 horas. Escribime por mail o dejame un mensaje.</p>
+            <a class="contact__mail" href="mailto:lucianoespinosa72@gmail.com">lucianoespinosa72@gmail.com</a>
+            <ul class="socials" role="list">
+              <li><a class="btn btn--ghost btn--sm" href="https://www.linkedin.com/in/luciano-espinosa-1b3a7043b/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+              <li><a class="btn btn--ghost btn--sm" href="https://github.com/lucianoespinosa72" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+              <li><a class="btn btn--ghost btn--sm" href="https://www.instagram.com/luchooespinosa/" target="_blank" rel="noopener noreferrer">Instagram<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+            </ul>
+          </div>
+
+          <form class="form" name="contacto" method="POST" action="/gracias.html" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contacto">
+            <p class="hidden-field"><label>No completar: <input name="bot-field"></label></p>
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input class="input" id="nombre" name="nombre" type="text" autocomplete="name" required placeholder="Tu nombre">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input class="input" id="email" name="email" type="email" autocomplete="email" required placeholder="tu@email.com">
+            </div>
+            <div class="field">
+              <label for="mensaje">Mensaje</label>
+              <textarea class="input" id="mensaje" name="mensaje" required placeholder="Contame en qué puedo ayudarte"></textarea>
+            </div>
+            <button class="btn btn--primary" type="submit">Enviar mensaje</button>
+            <p class="form__hint">Todos los campos son obligatorios.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 9. FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="logo" href="#inicio"><span class="logo__mark" aria-hidden="true">LE</span><span>espinosa.dev</span></a>
+          <p style="margin-top: var(--space-3); max-width: 28rem;">Diseñador UX/UI y front-end en formación. Hecho con HTML5, CSS3 y JavaScript vanilla, desplegado en Netlify.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Pie de página">
+          <p class="footer__heading">Navegación</p>
+          <ul role="list">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="footer__social">
+          <p class="footer__heading">Redes</p>
+          <ul role="list">
+            <li><a href="https://www.linkedin.com/in/luciano-espinosa-1b3a7043b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/lucianoespinosa72" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.instagram.com/luchooespinosa/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Luciano Espinosa. Todos los derechos reservados.</p>
+        <p>Diseñado en Figma · Hecho con HTML, CSS y JS vanilla</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caso de estudio: TurnoYa, turnos médicos para adultos mayores — Luciano Espinosa</title>
+  <meta name="description" content="Caso de estudio UX/UI: cómo rediseñé la reserva de turnos médicos de un centro de salud, de 9 a 4 pasos, validado con usuarios reales.">
+  <meta name="theme-color" content="#0a0b14" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f4f5fb" media="(prefers-color-scheme: light)">
+  <link rel="canonical" href="https://SITIO.netlify.app/caso-estudio.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Caso de estudio: TurnoYa — Luciano Espinosa">
+  <meta property="og:description" content="Rediseño del flujo de reserva de turnos: problema, proceso, solución y resultados.">
+  <meta property="og:image" content="https://SITIO.netlify.app/img/og-image.png">
+  <meta property="og:url" content="https://SITIO.netlify.app/caso-estudio.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (!t) t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", t);
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="Luciano Espinosa, volver al inicio">
+        <span class="logo__mark" aria-hidden="true">LE</span>
+        <span>espinosa<span aria-hidden="true">.dev</span></span>
+      </a>
+      <div class="header-actions">
+        <a class="btn btn--ghost btn--sm" href="index.html#proyectos">Todos los proyectos</a>
+        <button class="icon-btn theme-toggle" type="button" aria-label="Cambiar a modo claro" data-theme-toggle>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <article>
+      <header class="case-hero">
+        <div class="grid-bg" aria-hidden="true"></div>
+        <div class="container">
+          <a class="back-link" href="index.html#proyectos">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+            Volver a proyectos
+          </a>
+          <h1>TurnoYa: reservar un turno médico en 4 pasos</h1>
+          <p class="hero__lead">Rediseño del flujo de turnos de un centro de salud local, pensado para que adultos mayores puedan reservar sin ayuda.</p>
+          <dl class="case-facts">
+            <div><dt>Rol</dt><dd>UX research + UI</dd></div>
+            <div><dt>Duración</dt><dd>6 semanas</dd></div>
+            <div><dt>Herramientas</dt><dd>Figma, FigJam, Maze</dd></div>
+            <div><dt>Año</dt><dd>2026</dd></div>
+          </dl>
+        </div>
+      </header>
+
+      <div class="container">
+        <figure class="case-cover">
+          <img src="img/proyecto-turnos.svg" width="640" height="400" alt="Pantallas de TurnoYa: elección de especialidad, calendario con horarios libres y confirmación del turno">
+        </figure>
+
+        <section class="case-section" aria-labelledby="problema">
+          <div class="case-section__grid">
+            <p class="eyebrow">01 · Problema</p>
+            <div>
+              <h2 id="problema">Reservar un turno era más difícil que ir en persona</h2>
+              <p>El sistema online del centro tenía 9 pasos, textos chicos y obligaba a crear una cuenta. El 70% de los turnos se seguía pidiendo por teléfono, saturando la recepción.</p>
+              <p>Usuario objetivo: personas de 60+ años, con celular Android y poca confianza en trámites digitales.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="case-section" aria-labelledby="proceso">
+          <div class="case-section__grid">
+            <p class="eyebrow">02 · Proceso</p>
+            <div>
+              <h2 id="proceso">Del research al prototipo</h2>
+              <ol class="case-steps" role="list">
+                <li class="card case-step"><h3>Entrevistas</h3><p>5 entrevistas con pacientes y 2 con recepcionistas.</p></li>
+                <li class="card case-step"><h3>Mapa de dolor</h3><p>Detecté 3 abandonos clave: registro, calendario y confirmación.</p></li>
+                <li class="card case-step"><h3>Wireframes</h3><p>Exploré 3 flujos alternativos en baja fidelidad.</p></li>
+                <li class="card case-step"><h3>Prototipo y test</h3><p>Test moderado con 5 personas sobre el prototipo en Figma.</p></li>
+              </ol>
+              <blockquote class="case-quote">
+                <p>“Yo quiero elegir el día, no llenar un formulario.”</p>
+                <footer>— Paciente, 67 años</footer>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
+        <section class="case-section" aria-labelledby="solucion">
+          <div class="case-section__grid">
+            <p class="eyebrow">03 · Solución</p>
+            <div>
+              <h2 id="solucion">Menos pasos, más claridad</h2>
+              <ul>
+                <li>Reserva como invitado con DNI: se eliminó la creación de cuenta.</li>
+                <li>Calendario que muestra solo días con horarios libres.</li>
+                <li>Texto base de 18 px, botones de 56 px y contraste AAA en acciones principales.</li>
+                <li>Confirmación por WhatsApp con opción de cancelar en un toque.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="case-section" aria-labelledby="resultado">
+          <div class="case-section__grid">
+            <p class="eyebrow">04 · Resultado</p>
+            <div>
+              <h2 id="resultado">Resultados y aprendizajes</h2>
+              <ul class="metrics__grid" role="list" style="margin-top: var(--space-5);">
+                <li class="card metric"><span class="metric__value">4</span><span class="metric__label">pasos (antes 9)</span></li>
+                <li class="card metric"><span class="metric__value">-52%</span><span class="metric__label">tiempo de reserva</span></li>
+                <li class="card metric"><span class="metric__value">5/5</span><span class="metric__label">completaron la tarea</span></li>
+                <li class="card metric"><span class="metric__value">SUS 84</span><span class="metric__label">usabilidad percibida</span></li>
+              </ul>
+              <h3>Qué aprendí</h3>
+              <p>Testear con el usuario real cambió todo: mi primera versión tenía un calendario mensual que nadie entendía. Cambiarlo por una lista de “próximos días libres” fue la decisión que más mejoró el resultado.</p>
+            </div>
+          </div>
+        </section>
+
+        <nav class="case-nav" aria-label="Navegación entre proyectos">
+          <a class="btn btn--ghost" href="index.html#proyectos">← Todos los proyectos</a>
+          <a class="btn btn--primary" href="index.html#contacto">Trabajemos juntos</a>
+        </nav>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__bottom" style="margin-top: 0; border-top: 0; padding-top: 0;">
+      <p>© <span data-year>2026</span> Luciano Espinosa.</p>
+      <p>Hecho con HTML, CSS y JS vanilla</p>
+    </div>
+  </footer>
+</body>
+</html>
