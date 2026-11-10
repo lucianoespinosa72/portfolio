@@ -26,7 +26,7 @@ Los puntos marcados con ✏️ los tenés que completar vos con datos reales.
 
 ### Escenario de uso
 
-Carolina recibe el link del portfolio por LinkedIn mientras viaja. Lo abre en el celular, lee el hero ("Desarrollador Front-end & UX/UI", "Disponible para pasantías"), baja hasta Proyectos, abre el caso de MecanicosApp y ve que hubo investigación con mecánicos reales y decisiones justificadas. Toca "Hablemos" en el menú, copia el mail y le escribe para agendar una entrevista. Todo en menos de 3 minutos.
+Carolina recibe el link del portfolio por LinkedIn mientras viaja. Lo abre en el celular, lee el hero ("Desarrollador Front-end & UX/UI", "Disponible para pasantías"), baja hasta Proyectos, abre el caso de mecanicos app y ve un producto real publicado, con decisiones de diseño justificadas. Toca "Hablemos" en el menú, copia el mail y le escribe para agendar una entrevista. Todo en menos de 3 minutos.
 
 ---
 
@@ -86,7 +86,7 @@ Inicio (index.html)
 
 ✏️ Hacelo con 3–5 personas en FigJam (o en papel): dales tarjetas con estos contenidos y pediles que las agrupen y nombren los grupos.
 
-Tarjetas: *Figma · HTML/CSS · Python · MecanicosApp · Don Joaquín SRL · Puerto Pádel · Vaxler · Licenciatura · Principios de trabajo · Foto · Email · LinkedIn · Disponibilidad · Ubicación*
+Tarjetas: *Figma · HTML/CSS · Python · MecanicosApp · Don Joaquín Hnos. · Puerto Pádel · Vaxler · Licenciatura · Principios de trabajo · Foto · Email · LinkedIn · Disponibilidad · Ubicación*
 
 Registrá: grupos que formaron, nombres que les pusieron y qué cambiaste (ej.: "Disponibilidad y ubicación se agruparon con la presentación → van al hero").
 

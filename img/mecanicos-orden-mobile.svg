@@ -27,7 +27,7 @@
     <g transform="translate(630 60)">
       <rect width="320" height="630" rx="40" fill="#0a0b14" stroke="#3a3f88" stroke-width="3"/>
       <rect x="18" y="22" width="284" height="586" rx="28" fill="#14173a"/>
-      <text x="44" y="80" fill="#a8adcf" font-size="15">Orden #0142</text>
+      <text x="44" y="80" fill="#a8adcf" font-size="15">Presupuesto #0142</text>
       <text x="44" y="110" fill="#eceeff" font-size="24" font-weight="700">Gol Trend</text>
       <text x="44" y="136" fill="#a8adcf" font-size="15">Cliente: Juan Pérez</text>
       <g font-size="15">
@@ -38,12 +38,12 @@
         <circle cx="56" cy="314" r="12" fill="none" stroke="#3a3f88" stroke-width="3"/><text x="80" y="319" fill="#a8adcf">Listo para retirar</text>
       </g>
       <rect x="40" y="350" width="240" height="110" rx="16" fill="#1c2050" stroke="#3a3f88"/>
-      <text x="60" y="384" fill="#a8adcf" font-size="14">Repuestos + mano de obra</text>
+      <text x="60" y="384" fill="#a8adcf" font-size="14">Total del presupuesto</text>
       <text x="60" y="426" fill="#c6ff3d" font-size="30" font-weight="700" font-family="Consolas, monospace">$185.000</text>
       <rect x="40" y="480" width="240" height="56" rx="16" fill="#c6ff3d"/>
-      <text x="160" y="515" fill="#0a0b14" font-size="18" font-weight="700" text-anchor="middle">Avisar al cliente</text>
+      <text x="160" y="515" fill="#0a0b14" font-size="18" font-weight="700" text-anchor="middle">Enviar por WhatsApp</text>
       <rect x="40" y="548" width="240" height="44" rx="14" fill="none" stroke="#3a3f88" stroke-width="2"/>
-      <text x="160" y="576" fill="#eceeff" font-size="16" text-anchor="middle">Agregar nota</text>
+      <text x="160" y="576" fill="#eceeff" font-size="16" text-anchor="middle">Descargar PDF</text>
     </g>
   </g>
 </svg>

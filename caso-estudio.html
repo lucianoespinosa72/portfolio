@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Caso de estudio: MecanicosApp, gestión para talleres mecánicos — Luciano Espinosa</title>
-  <meta name="description" content="Caso de estudio UX/UI de MecanicosApp, el SaaS que diseño y desarrollo para que los talleres mecánicos gestionen órdenes, clientes y vehículos.">
+  <title>Caso de estudio: mecanicos app, gestión para talleres mecánicos — Luciano Espinosa</title>
+  <meta name="description" content="Caso de estudio de mecanicos app, el SaaS que diseñé y desarrollé para talleres mecánicos: historial por patente, presupuestos por WhatsApp, cuenta corriente y caja.">
   <meta name="theme-color" content="#0a0b14" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#f4f5fb" media="(prefers-color-scheme: light)">
   <link rel="canonical" href="https://SITIO.netlify.app/caso-estudio.html">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="es_AR">
-  <meta property="og:title" content="Caso de estudio: MecanicosApp — Luciano Espinosa">
+  <meta property="og:title" content="Caso de estudio: mecanicos app — Luciano Espinosa">
   <meta property="og:description" content="Un SaaS para talleres mecánicos: problema, proceso, solución y resultado.">
   <meta property="og:image" content="https://SITIO.netlify.app/img/og-image.png">
   <meta property="og:url" content="https://SITIO.netlify.app/caso-estudio.html">
@@ -59,29 +59,32 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
             Volver a proyectos
           </a>
-          <h1>MecanicosApp: el taller, ordenado en una sola pantalla</h1>
-          <p class="hero__lead">Mi SaaS propio para talleres mecánicos: clientes, vehículos y órdenes de trabajo en un solo lugar, pensado para usarse desde el celular en medio del taller.</p>
+          <h1>mecanicos app: gestionar el taller desde el celular</h1>
+          <p class="hero__lead">Mi SaaS para talleres mecánicos que hoy trabajan con cuaderno y WhatsApp: historial por patente, presupuestos en PDF, cuenta corriente y caja, todo en un solo lugar.</p>
           <dl class="case-facts">
-            <div><dt>Rol</dt><dd>Fundador · UX/UI + desarrollo</dd></div>
+            <div><dt>Rol</dt><dd>Fundador · diseño y desarrollo</dd></div>
             <div><dt>Tipo</dt><dd>SaaS B2B</dd></div>
-            <div><dt>Herramientas</dt><dd>Figma, HTML, CSS, JS, Git</dd></div>
+            <div><dt>Stack</dt><dd>Figma, Next.js, Vercel</dd></div>
             <div><dt>Período</dt><dd>2025 — hoy</dd></div>
           </dl>
+          <div class="hero__ctas" style="position: relative;">
+            <a class="btn btn--primary" href="https://mecanic-os-nine.vercel.app/" target="_blank" rel="noopener noreferrer">Ver el producto<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+          </div>
         </div>
       </header>
 
       <div class="container">
         <figure class="case-cover">
-          <img src="img/proyecto-mecanicos.svg" width="640" height="400" alt="Panel de escritorio de MecanicosApp con indicadores del día y la lista de órdenes de trabajo con su estado">
+          <img src="img/proyecto-mecanicos.svg" width="640" height="400" alt="Ilustración del panel de escritorio de mecanicos app con indicadores del día y la lista de trabajos con su estado">
         </figure>
 
         <section class="case-section" aria-labelledby="problema">
           <div class="case-section__grid">
             <p class="eyebrow">01 · Problema</p>
             <div>
-              <h2 id="problema">Los talleres se organizan con papel y WhatsApp</h2>
-              <p>En muchos talleres chicos, las órdenes se anotan en un cuaderno, los presupuestos se mandan por WhatsApp y el estado de cada auto “lo sabe el mecánico”. Cuando un cliente llama para preguntar, hay que salir a buscar la respuesta.</p>
-              <p>El desafío: que el dueño del taller sepa en segundos qué autos tiene, en qué estado está cada uno y cuánto se cobra, sin que cargar datos le quite tiempo de trabajo.</p>
+              <h2 id="problema">El taller vive en un cuaderno y en WhatsApp</h2>
+              <p>En muchos talleres chicos, el historial de cada auto está anotado en un cuaderno, los presupuestos se escriben a mano o por mensaje y nadie sabe con certeza quién debe cuánto. Cuando vuelve un cliente, reconstruir qué se le hizo a su auto lleva tiempo.</p>
+              <p>El desafío: darle al dueño del taller una herramienta que pueda usar desde el celular, sin instalar nada ni aprender un sistema complicado.</p>
             </div>
           </div>
         </section>
@@ -90,17 +93,13 @@
           <div class="case-section__grid">
             <p class="eyebrow">02 · Proceso</p>
             <div>
-              <h2 id="proceso">Del taller al prototipo</h2>
+              <h2 id="proceso">Del cuaderno al producto</h2>
               <ol class="case-steps" role="list">
-                <li class="card case-step"><h3>Observar el taller</h3><p>Hablé con mecánicos de la zona sobre cómo reciben un auto, presupuestan y avisan al cliente.</p></li>
-                <li class="card case-step"><h3>Mapa del recorrido</h3><p>Ingreso → diagnóstico → presupuesto → reparación → aviso → retiro.</p></li>
-                <li class="card case-step"><h3>Priorizar</h3><p>Dejé para después todo lo que no ayuda a responder “¿cómo va mi auto?”.</p></li>
-                <li class="card case-step"><h3>Prototipo y feedback</h3><p>Prototipo en Figma probado con mecánicos antes de programar cada módulo.</p></li>
+                <li class="card case-step"><h3>Entender el día a día</h3><p>Relevé cómo trabaja un taller: recibe el auto, presupuesta, repara, cobra y a veces fía.</p></li>
+                <li class="card case-step"><h3>Elegir el eje</h3><p>La patente es lo que todos conocen: todo el historial se organiza a partir de ella.</p></li>
+                <li class="card case-step"><h3>Priorizar módulos</h3><p>Clientes y vehículos, servicios con precio, presupuestos, cuenta corriente y caja.</p></li>
+                <li class="card case-step"><h3>Diseñar y publicar</h3><p>Prototipo en Figma, desarrollo en Next.js y deploy en Vercel.</p></li>
               </ol>
-              <blockquote class="case-quote">
-                <p>“No tengo tiempo de llenar formularios, tengo las manos llenas de grasa.”</p>
-                <footer>— Dueño de taller, durante una entrevista</footer>
-              </blockquote>
             </div>
           </div>
         </section>
@@ -111,14 +110,15 @@
             <div>
               <h2 id="solucion">Decisiones de diseño</h2>
               <ul>
-                <li><strong>Mobile primero:</strong> el mecánico usa el celular en el taller; la computadora queda para el resumen del día.</li>
-                <li><strong>Estados con color y texto:</strong> cada orden muestra si está esperando, en curso o lista, sin depender solo del color.</li>
-                <li><strong>Cargar lo mínimo:</strong> una orden nueva se crea con la patente; los datos del vehículo y del cliente se completan solos si ya existen.</li>
-                <li><strong>Acciones grandes:</strong> botones de ancho completo para usar con una mano y sin precisión.</li>
-                <li><strong>Avisar en un toque:</strong> cuando la orden pasa a “lista”, el sistema propone avisarle al cliente.</li>
+                <li><strong>Mobile primero:</strong> el dueño del taller usa el celular; la computadora es opcional.</li>
+                <li><strong>Todo por patente:</strong> buscás el auto y ves todo lo que se le hizo, sin depender de la memoria.</li>
+                <li><strong>Usar el canal que ya existe:</strong> el presupuesto se genera en PDF y se envía por WhatsApp; el cliente no necesita instalar ninguna app.</li>
+                <li><strong>Plata clara:</strong> la cuenta corriente muestra quién debe y cuánto, y la caja diaria cierra el día.</li>
+                <li><strong>Precios cargados una vez:</strong> un catálogo de servicios con precio arma los presupuestos más rápido.</li>
+                <li><strong>Probar sin riesgo:</strong> 14 días gratis, sin tarjeta, y cada taller ve solo sus propios datos.</li>
               </ul>
               <figure class="case-cover" style="margin-top: var(--space-6);">
-                <img src="img/mecanicos-orden-mobile.svg" width="1200" height="750" loading="lazy" alt="Dos pantallas mobile: la lista de órdenes del día con su estado y el detalle de una orden con su línea de tiempo, el total y el botón Avisar al cliente">
+                <img src="img/mecanicos-orden-mobile.svg" width="1200" height="750" loading="lazy" alt="Ilustración de dos pantallas mobile: la lista de trabajos del día con su estado y un presupuesto con su total y los botones Enviar por WhatsApp y Descargar PDF">
               </figure>
             </div>
           </div>
@@ -130,21 +130,21 @@
             <div>
               <h2 id="resultado">Dónde está hoy y qué aprendí</h2>
               <ul class="metrics__grid" role="list" style="margin-top: var(--space-5);">
-                <li class="card metric"><span class="metric__value">1</span><span class="metric__label">dato para abrir una orden: la patente</span></li>
-                <li class="card metric"><span class="metric__value">3</span><span class="metric__label">estados claros por orden</span></li>
-                <li class="card metric"><span class="metric__value">6</span><span class="metric__label">etapas del recorrido mapeadas</span></li>
-                <li class="card metric"><span class="metric__value">100%</span><span class="metric__label">usable desde el celular</span></li>
+                <li class="card metric"><span class="metric__value">6</span><span class="metric__label">módulos de gestión</span></li>
+                <li class="card metric"><span class="metric__value">14</span><span class="metric__label">días de prueba gratis</span></li>
+                <li class="card metric"><span class="metric__value">1</span><span class="metric__label">plan simple, sin letra chica</span></li>
+                <li class="card metric"><span class="metric__value">0</span><span class="metric__label">instalaciones necesarias</span></li>
               </ul>
               <h3>Qué aprendí</h3>
-              <p>Diseñar un producto propio me obligó a decir que no: cada función nueva tiene que justificar el tiempo que le saca al mecánico.</p>
-              <p>También aprendí que el usuario real manda: lo que en el escritorio parecía obvio, en el taller, con poca luz y las manos ocupadas, no funcionaba.</p>
+              <p>Hacer un producto propio me obligó a pensar más allá de la interfaz: el precio, la prueba gratis y las preguntas frecuentes también son parte de la experiencia.</p>
+              <p>Y que la mejor función es la que el usuario ya entiende: apoyarme en WhatsApp y en la patente hizo que no haga falta explicar el sistema.</p>
             </div>
           </div>
         </section>
 
         <nav class="case-nav" aria-label="Navegación entre proyectos">
           <a class="btn btn--ghost" href="index.html#proyectos">← Todos los proyectos</a>
-          <a class="btn btn--primary" href="index.html#contacto">Pedir una demo</a>
+          <a class="btn btn--primary" href="index.html#contacto">Trabajemos juntos</a>
         </nav>
       </div>
     </article>
