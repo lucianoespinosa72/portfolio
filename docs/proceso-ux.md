@@ -108,7 +108,7 @@ Tip: sacá capturas del sitio en 375 y 1280 y usalas como guía para que Figma y
 
 ## 6. Test de usabilidad
 
-**Participantes:** mínimo 3 (ideal 5). ✏️ Nombre/perfil de cada uno (ej.: "P1 — compañero de 4.º año", "P2 — desarrolladora, 28").
+**Participantes (3):** P1 — Diego Bua · P2 — Valentín Sillero · P3 — Ignacio Etcheto. ✏️ Agregar el perfil de cada uno (ej.: "compañero de la carrera", "desarrollador").
 **Sobre:** prototipo de Figma (mobile).
 **Método:** moderado, pensar en voz alta, 10–15 min por persona.
 
@@ -122,13 +122,32 @@ Tip: sacá capturas del sitio en 375 y 1280 y usalas como guía para que Figma y
 
 Al final: "¿Qué fue lo que más te costó?" y "Del 1 al 5, ¿qué tan fácil fue usarlo?"
 
-### Hallazgos y cambios (✏️ completar con lo que pase en tus tests)
+### Comentarios de los participantes
+
+> **P1 — Diego Bua:** "El portfolio transmite mucha profesionalidad. Me gustó especialmente la forma en que están presentados los proyectos y la claridad con la que se muestran las habilidades."
+
+> **P2 — Valentín Sillero:** "Me gustó mucho el diseño de la página y, especialmente, la sección de contacto al final. Me parece una buena forma de cerrar el portfolio y facilitar que cualquier persona pueda comunicarse."
+
+> **P3 — Ignacio Etcheto:** "Un portfolio muy completo y profesional. Me parece destacable que combines conocimientos de programación y diseño UX/UI, además de tener proyectos propios funcionando."
+
+### Qué validaron
+
+| Decisión de diseño | Evidencia | Participantes |
+|---|---|---|
+| Proyectos como tarjetas con resultado y tags (sección 05) | "la forma en que están presentados los proyectos" | P1 |
+| Skills en 4 categorías con chips | "la claridad con la que se muestran las habilidades" | P1 |
+| Bloque de contacto destacado como cierre (CTA + mail + redes + formulario) | "buena forma de cerrar el portfolio y facilitar que cualquier persona pueda comunicarse" | P2 |
+| Concepto visual "Futurista · Preciso · Cercano" | "transmite mucha profesionalidad", "me gustó mucho el diseño" | P1, P2, P3 |
+| Propuesta de valor: diseño + código, con proyectos reales publicados | "combines programación y diseño UX/UI… proyectos propios funcionando" | P3 |
+
+**Conclusión:** los 3 participantes percibieron el portfolio como profesional y completo, y destacaron justo las secciones que la proto-persona necesita encontrar rápido: proyectos, skills y contacto.
+
+### Hallazgos y cambios aplicados
 
 | Hallazgo | Usuarios | Severidad | Cambio aplicado |
 |---|---|---|---|
-| ej.: No veían el CTA de contacto en mobile | 2/3 | Alta | Se agregó botón "Hablemos" dentro del menú mobile |
-| ej.: No sabían que la tarjeta era clickeable | 2/3 | Media | Toda la tarjeta clickeable + flecha animada en hover |
-| ✏️ | | | |
+| ✏️ Resultado de las tareas T1–T5 (¿alguien tardó o se equivocó?) | —/3 | — | ✏️ |
+| ✏️ Respuesta a "¿Qué fue lo que más te costó?" | —/3 | — | ✏️ |
 
 ---
 
