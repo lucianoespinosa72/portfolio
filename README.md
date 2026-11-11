@@ -90,7 +90,24 @@ Reporte completo: [docs/capturas/lighthouse-mobile.html](docs/capturas/lighthous
 
 ## Créditos y recursos
 
-- Diseño y código propios, sin template de base.
+- Sin template de base: diseño y código hechos para este proyecto, con asistencia de IA (ver abajo).
 - Fuentes: [Google Fonts](https://fonts.google.com) (Space Grotesk, JetBrains Mono).
-- Íconos: dibujados a mano en SVG, inspirados en el estilo de [Lucide](https://lucide.dev) (ISC).
-- Herramientas: Figma, WebAIM Contrast Checker, Lighthouse, Squoosh.
+- Íconos: SVG propios, inspirados en el estilo de [Lucide](https://lucide.dev) (ISC).
+- Imágenes de proyectos: capturas de los sitios reales (mecanicos app, Qué Delicia!, Puerto Pádel).
+- Herramientas: Figma, Lighthouse, sharp (conversión de imágenes a WebP).
+
+## Uso de IA
+
+Usé **Claude (Anthropic), a través de Claude Code**, como asistente durante todo el trabajo.
+
+**Qué se generó con IA:**
+- El código base del sitio (HTML, CSS y JavaScript), a partir de la consigna y de mis indicaciones de estilo ("moderno y futurista con colores oscuros").
+- Textos de las secciones y del caso de estudio, redactados a partir de mis datos y de la información publicada en mis proyectos.
+- El material de proceso: proto-persona, escenario, benchmark (2 de 3 portfolios), sitemap, wireframes, moodboard y el PDF de 10 slides.
+
+**Qué hice yo y cómo lo revisé:**
+- Aporté el contenido real: datos personales, foto, proyectos (mecanicos app, Qué Delicia!, Puerto Pádel), links y experiencia.
+- Definí el estilo y revisé cada versión en el navegador; pedí correcciones (por ejemplo, la línea de tiempo de experiencia, sacar un proyecto, usar capturas reales en vez de ilustraciones).
+- Corregí los textos que no reflejaban mis proyectos con la información real de cada sitio.
+- Hice el test con 3 personas (Diego Bua, Valentín Sillero e Ignacio Etcheto).
+- Configuré el repositorio en GitHub, el deploy en Vercel e hice los commits.
