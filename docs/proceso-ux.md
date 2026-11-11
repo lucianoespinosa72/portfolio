@@ -57,7 +57,7 @@ Carolina recibe el link del portfolio por LinkedIn mientras viaja. Lo abre en el
 
 **Diferenciación con la referencia:** aunque ambos son oscuros, este diseño usa otra paleta (azul-violeta + lima en lugar de la de referencia), otra tipografía, grilla HUD de fondo, numeración de secciones y un **toggle claro/oscuro**.
 
-✏️ Moodboard: armá en Figma un frame con 8–12 imágenes (interfaces sci-fi, HUDs, Dribbble "dark neon dashboard", fotos de luces de ciudad) y las muestras de color/tipografía.
+**Moodboard:** en Figma (página 01) y en [docs/figma/moodboard.png](figma/moodboard.png): HUD, neón, grilla técnica, tipografía, estética terminal, foto real, botones, paleta y las 3 palabras clave.
 
 ---
 

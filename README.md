@@ -7,6 +7,7 @@ Portfolio web personal · Trabajo Final de **Diseño UX-UI 2026** · Lic. en Sis
 | 🌐 **Sitio** | https://portfolio-ten-alpha-t6jgrlmz9h.vercel.app |
 | 🎨 **Figma** | https://www.figma.com/design/NRhbnngRJnUtDwOPnnUfhw (research, wireframes, design system y prototipo) |
 | 📦 **Repo** | https://github.com/lucianoespinosa72/portfolio |
+| 📄 **Proceso UX (PDF)** | [docs/proceso-ux.pdf](docs/proceso-ux.pdf) · detalle en [docs/proceso-ux.md](docs/proceso-ux.md) |
 
 ## Capturas
 
